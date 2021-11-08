@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="border">
+    <header>
       <div class="container flex-box">
         <nav class="nav">
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
@@ -47,12 +47,14 @@
 
     <main>
       <!-- Hero start -->
-      <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+      <section class="bg border">
+        <div class="hero">
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button class="hero-btn" type="button">Заказать услугу</button>
+        </div>
       </section>
       <!-- Hero end -->
 
@@ -61,25 +63,25 @@
         <div class="container">
           <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">Наши преимущества</h2>
           <ul class="benefit">
-            <li class="benefit-item">
+            <li class="benefit-item icon-antenna">
               <h3 class="benefit-item--title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="benefit-item">
+            <li class="benefit-item icon-clock">
               <h3 class="benefit-item--title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="benefit-item">
+            <li class="benefit-item icon-diagram">
               <h3 class="benefit-item--title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="benefit-item">
+            <li class="benefit-item icon-astronaut">
               <h3 class="benefit-item--title">Современные технологии</h3>
               <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -166,22 +168,47 @@
       <!-- team end -->
     </main>
     <!-- footer start -->
-    <footer class="footer section-footer">
+    <footer class="footer">
       <div class="container">
-        <a class="logo footer-logo" href="./index.html"><span>Web</span>Studio</a>
-        <address>
-          <ul>
-            <li class="item">
-              <a class="footer-cont" href="">г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-            <li class="item">
-              <a class="footer-cont" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="item">
-              <a class="footer-cont" href="tel:380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="flex">
+          <div class="footer-address">
+            <a class="logo footer-logo" href="./index.html"><span>Web</span>Studio</a>
+            <address>
+              <ul>
+                <li class="item">
+                  <a class="footer-cont" href="">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="item">
+                  <a class="footer-cont" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                  <a class="footer-cont" href="tel:380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social">
+            <b class="social-title">присоединяйтесь</b>
+            <ul class="social-inner">
+              <li class="social-item">
+                <a class="social-link instagram" href="" aria-label="instagram link"></a>
+              </li>
+
+              <li class="social-item">
+                <a class="social-link twitter" href="" aria-label="twitter link"></a>
+              </li>
+
+              <li class="social-item">
+                <a class="social-link facebook" href="" aria-label="facebook link"></a>
+              </li>
+
+              <li class="social-item">
+                <a class="social-link linkedin" href="" aria-label="linkedin link"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- footer end -->
