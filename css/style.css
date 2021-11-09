@@ -118,19 +118,34 @@ button {
   display: flex;
   margin-left: auto;
 }
+
 .address-item:not(:last-child) {
   margin-right: 43px;
 }
 .addres-cont {
+  display: inline-block;
+
   color: var(--text-color);
 }
-.nav-site--link:hover,
-.addres-cont:hover,
-.nav-site--link:focus,
-.addres-cont:focus {
-  color: var(--hover-color);
+
+.address-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: var(--text-color);
 }
 
+.nav-site--link:hover,
+.addres-cont:hover,
+.address-icon:hover,
+.nav-site--link:focus,
+.address-icon:focus,
+.addres-cont:focus {
+  fill: var(--hover-color);
+  color: var(--hover-color);
+}
 /* header end */
 
 /* Hero start */
@@ -191,31 +206,20 @@ button {
   margin-right: 30px;
 }
 
-.benefit-item::before {
-  content: '';
-  display: block;
+.benefit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
+
   background-color: var(--filter-btn-bg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.icon-antenna::before {
-  background-image: url('../images/benefit-antenna.svg');
-}
-
-.icon-clock::before {
-  background-image: url('../images/benefit-clock.svg');
-}
-
-.icon-diagram::before {
-  background-image: url('../images/benefit-diagram.svg');
-}
-
-.icon-astronaut::before {
-  background-image: url('../images/benefit-astronaut.svg');
+.benefit-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .benefit-item--title {
