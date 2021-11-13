@@ -307,13 +307,15 @@ button {
   justify-content: center;
 }
 
-.social-box {
+.team-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  fill: var(--svg-color);
 }
 
 .team-social-box:not(:last-child) {
@@ -321,24 +323,14 @@ button {
 }
 
 .social-link {
-  display: block;
-  align-items: center;
   width: 20px;
   height: 20px;
-}
-
-.team-social-link {
-  fill: var(--svg-color);
-}
-
-.team-social-box:hover,
-.team-social-box:focus {
-  background-color: var(--hover-color);
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
   fill: var(--main-color);
+  background-color: var(--hover-color);
 }
 /* team end */
 
@@ -347,40 +339,34 @@ button {
   display: flex;
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  width: calc((100%-150px) / 6);
+  width: 170px;
+  height: 92px;
 
   border: 1px solid var(--svg-color);
   border-radius: 4px;
+
+  fill: var(--svg-color);
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
-  display: block;
-  width: 160px;
+.clients-svg {
+  width: 106px;
   height: 60px;
-
-  fill: var(--svg-color);
-}
-
-.clients-item:hover,
-.clients-item:focus {
-  border-color: var(--hover-color);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--hover-color);
+  border-color: var(--hover-color);
 }
+
 /* clients end */
 
 /* portfolio start */
@@ -528,7 +514,6 @@ button {
 }
 
 .footer-social--box {
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social--box:not(:last-child) {
@@ -536,11 +521,19 @@ button {
 }
 
 .footer-social--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
   fill: var(--main-color);
 }
 
-.footer-social--box:hover,
-.footer-social--box:focus {
+.footer-social--link:hover,
+.footer-social--link:focus {
   background-color: var(--hover-color);
 }
 
