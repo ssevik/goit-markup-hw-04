@@ -42,6 +42,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -480,6 +481,11 @@ button {
   margin-bottom: 20px;
   color: var(--main-color);
 }
+
+.address{
+  margin-bottom: 9px;
+}
+
 .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -511,9 +517,6 @@ button {
 
 .footer-social--inner {
   display: flex;
-}
-
-.footer-social--box {
 }
 
 .footer-social--box:not(:last-child) {
